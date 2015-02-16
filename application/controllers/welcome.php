@@ -17,11 +17,6 @@ class Welcome extends CI_Controller {
             redirect('login');
         }
     }
-
-    public function do_logout(){
-        $this->session->sess_destroy();
-        redirect('login');
-    }
 }
 
 /* End of file welcome.php */
