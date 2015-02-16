@@ -73,8 +73,17 @@ class register_model extends CI_Model{
         }
 
         return  array(
-        'save_success' => false,
-                'msg' => "Er is iets fout gegaan:</br>". $msg
-                );
+            'save_success' => false,
+            'msg' => "Er is iets fout gegaan:</br>". $msg,
+            'userdata' =>  array(
+                'username' => $username,
+                'password' => $password,
+                'passwordcontroll' => $passwordcontroll,
+                'firstname' => $firstname,
+                'lastname' => $lastname,
+                'vispasnr' => $vispasnr,
+                'email' => $email
+            )
+        );
     }
 }

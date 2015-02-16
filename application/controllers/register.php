@@ -6,12 +6,11 @@ class Register extends CI_Controller{
         parent::__construct();
     }
 
-    public function index($msg = NULL){
-        // Load our view to be displayed
-        // to the user
-        $data['msg'] = $msg;
+    public function index($data = array()){
 
-        $this->load->view('register', $data);
+        // Load our view to be displayed
+        $msg['data'] = $data;
+        $this->load->view('register', $msg);
     }
 
     public function process(){
@@ -23,7 +22,7 @@ class Register extends CI_Controller{
 
         if(! $result['save_success']){
             // If user did not validate, then show them login page again
-            $this->index($result['msg']);
+            $this->index($result);
         }else{
             // If user did validate,
             // Send them to members area
