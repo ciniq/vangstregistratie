@@ -20,27 +20,28 @@
             </ul>
         </div><!-- end .header -->
         <div class="menu">
-            <ul class="nav">
-            <li><a href="#">log uit</a></li>
-            <li><a href="#">overzicht</a></li>
-            <li><a href="#">nieuwe vangst</a></li>
-            </ul>
+
         </div><!-- end .menu -->
         <div class="content">
             <div id='login_form'>
                 <form action='<?php echo base_url();?>login/process' method='post' name='process'>
-                    <h2>User Login</h2>
+                    <h2>Inloggen</h2>
                     <br />
                      <?php if(! is_null($msg)) echo $msg;?>
-                    <label for='username'>Username</label>
-                    <input type='text' name='username' id='username' size='25' /><br />
-
-                    <label for='password'>Password</label>
-                    <input type='password' name='password' id='password' size='25' /><br />
-
-                    <input type='Submit' value='Login' />
-                    <input type='Button' value='Registreer' onclick="document.location='<?php echo base_url();?>register'"/>
-
+                    <table class="login">
+                        <tr>
+                            <td><label for='username'>Gebruikersnaam</label></td>
+                            <td><input type='text' name='username' id='username' size='25' /></td>
+                        </tr>
+                        <tr>
+                            <td><label for='password'>Wachtwoord</label></td>
+                            <td><input type='password' name='password' id='password' size='25' /></td>
+                        </tr>
+                        <tr>
+                            <td><a href="<?php echo base_url();?>register">Registreren</a> </td>
+                            <td><input type='Submit' value='Inloggen' /></td>
+                        </tr>
+                    </table>
                 </form>
             </div>
         </div><!-- end .content -->

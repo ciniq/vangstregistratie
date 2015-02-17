@@ -201,6 +201,23 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 .vangst select.vangstaantal {
     width: 70px;
 }
+
+.registration {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.login {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.catches {
+    width: 400px;
+    margin: 0 auto;
+    color: black;
+}
+
 button,
 .button,
 input[type="button"],

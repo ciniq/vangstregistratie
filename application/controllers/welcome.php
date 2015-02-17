@@ -8,8 +8,7 @@ class Welcome extends CI_Controller {
     }
 
     public function index(){
-        // If the user is validated, then this function will run
-        echo 'Congratulations, you are logged in.';
+        redirect('overview');
     }
 
     private function check_isvalidated(){
