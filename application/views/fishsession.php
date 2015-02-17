@@ -31,97 +31,99 @@
             <form action='<?php echo base_url();?>fishsession/registercatch' method='post' class="vangst" name='registercatch'>
                 <h2>Vangst toevoegen</h2>
                 <br />
-        <fieldset name="vangstsessie">
-        <legend>Nieuwe registratie</legend>
-        <select name="dag" class="vangstdag">
-        <option value="" required>dag</option>
-        <?php
-            for ($i = 1; $i < 32; $i++)
-            {
-                echo '<option value="'.$i.'">'.$i.'</option>';
-            }
-        ?>
-        </select>
+                <fieldset name="vangstsessie">
+                <legend>Nieuwe registratie</legend>
+                <select name="dag" class="vangstdag">
+                <option value="" required>dag</option>
+                <?php
+                    for ($i = 1; $i < 32; $i++)
+                    {
+                        echo '<option value="'.$i.'">'.$i.'</option>';
+                    }
+                ?>
+                </select>
 
-        <select name="maand" class="vangstmaand">
-        <option value="" required>maand</option>
-        <?php
-            $months = array('jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec');
-            for ($i = 0; $i < 12; $i++)
-            {
-                echo '<option value="'.($i + 1).'">'.$months[$i].'</option>';
-            }
-        ?>
-        </select>
+                <select name="maand" class="vangstmaand">
+                <option value="" required>maand</option>
+                <?php
+                    $months = array('jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec');
+                    for ($i = 0; $i < 12; $i++)
+                    {
+                        echo '<option value="'.($i + 1).'">'.$months[$i].'</option>';
+                    }
+                ?>
+                </select>
 
-        <select name="van" class="vangsttijd">
-        <option value="" required>van</option>
-        <?php
-            for ($i = 5; $i < 24; $i++)
-            {
-                echo '<option value="'.$i.'">'.$i.':00</option>';
-            }
-        ?>
-        </select>
+                <select name="van" class="vangsttijd">
+                <option value="" required>van</option>
+                <?php
+                    for ($i = 5; $i < 24; $i++)
+                    {
+                        echo '<option value="'.$i.'">'.$i.':00</option>';
+                    }
+                ?>
+                </select>
 
-        <select name="tot" class="vangsttijd">
-        <option value="" required>tot</option>
-        <?php
-            for ($i = 5; $i < 24; $i++)
-            {
-                echo '<option value="'.$i.'">'.$i.':00</option>';
-            }
-        ?>
-        </select>
+                <select name="tot" class="vangsttijd">
+                <option value="" required>tot</option>
+                <?php
+                    for ($i = 5; $i < 24; $i++)
+                    {
+                        echo '<option value="'.$i.'">'.$i.':00</option>';
+                    }
+                ?>
+                </select>
 
-        <select name="hsv" class="vangsthsv">
-        <option value="0">eigen vereniging</option>
-        <?php
-            foreach($community as $com)
-            {
-                echo '<option value="'.$com->id.'">'.$com->displayname.'</option>';
-            }
-        ?>
-        </select>
+                <select name="hsv" class="vangsthsv">
+                <option value="0">eigen vereniging</option>
+                <?php
+                    foreach($community as $com)
+                    {
+                        echo '<option value="'.$com->id.'">'.$com->displayname.'</option>';
+                    }
+                ?>
+                </select>
 
-        </fieldset>
-        <br>
-        <fieldset name="vangsten">
-        <legend>Gevangen vissen</legend>
-        <select name="vissoort" class="vangstsoort">
-        <option value="geen">vissoort</option>
-        <?php
-            foreach($species as $spec)
-            {
-                echo '<option value="'.$spec->id.'">'.$spec->name.'</option>';
-            }
-        ?>
-        </select>
+                </fieldset>
+                <br>
+                <fieldset name="vangsten">
+                <legend>Gevangen vissen</legend>
+                <div>
+                    <select name="vissoort" class="vangstsoort">
+                    <option value="geen">vissoort</option>
+                    <?php
+                        foreach($species as $spec)
+                        {
+                            echo '<option value="'.$spec->id.'">'.$spec->name.'</option>';
+                        }
+                    ?>
+                    </select>
 
-        <select name="formaat" class="vangstformaat">
-        <option value="0">formaat</option>
-        <?php
-            foreach($size as $s)
-            {
-                echo '<option value="'.$s->id.'">'.$s->size.'</option>';
-            }
-        ?>
-        </select>
+                    <select name="formaat" class="vangstformaat">
+                    <option value="0">formaat</option>
+                    <?php
+                        foreach($size as $s)
+                        {
+                            echo '<option value="'.$s->id.'">'.$s->size.'</option>';
+                        }
+                    ?>
+                    </select>
 
-        <select name="aantal" class="vangstaantal">
-        <option value="0">aantal</option>
-        <?php
-            for ($i = 1; $i < 11; $i++)
-            {
-                echo '<option value="'.$i.'">'.$i.'</option>';
-            }
-        ?>
-        </select>
+                    <select name="aantal" class="vangstaantal">
+                    <option value="0">aantal</option>
+                    <?php
+                        for ($i = 1; $i < 11; $i++)
+                        {
+                            echo '<option value="'.$i.'">'.$i.'</option>';
+                        }
+                    ?>
+                    </select>
 
-        <button type="button" class="vangstextra">+</button>
-        </fieldset>
-        <br>
-        <input type="submit" value="Verstuur">
+                    <button type="button" class="vangstextra">+</button>
+                </div>
+                </fieldset>
+
+                <input type="submit" value="Verstuur">
 
 
             </form>
