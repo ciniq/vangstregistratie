@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    font: 16px/1.0 Lato, sans-serif;
+    background-color: #333;
+    color: #FFF;
+}
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    margin: 24px 0 12px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #004075;
+}
+h1, h2 {
+    font-size: 18px;
+}
+h3, h4 {
+    font-size: 14px;
+}
+h5, h6 {
+    font-size: 12px;
+}
+
+label {
+    color: black;
+}
+
+.content p {
+    margin-top: 0;
+    padding: 0px 20px 12px 20px;
+    line-height: 150%;
+    color: #222;
+}
+a img {
+    border: none;
+}
+a:link, a:visited {
+    color:#414958;
+    text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+.container {
+    width: 50%;
+    max-width: 960px;
+    min-width: 360px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+.header {
+    height: 120px;
+    padding: 20px 0;
+    background-color: #004075;
+}
+.logo {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+ul.title {
+    list-style: none;
+}
+ul.title li {
+    display: block;
+}
+ul.title li:first-child {
+    margin-top: 48px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+ul.title li:last-child {
+    margin-top: 40px;
+    margin-right: 20px;
+    float: right;
+    color: #99B3C8;
+}
+ul.nav {
+    list-style: none;
+    height: 46px;
+    padding-right: 8px;
+    background-color: #24890D;
+}
+ul.nav li {
+    display: inline-block;
+    float: right;
+}
+ul.nav a, ul.nav a:visited {
+    height: 16px;
+    padding: 15px;
+    display: block;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #24890D;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+    background-color: #41A62A;
+    color: #FFF;
+}
+.content {
+    padding: 10px 0;
+}
+.content ul, .content ol {
+    padding: 0 8px 8px 40px;
+}
+.footer {
+    height: 16px;
+    padding: 16px 20px 14px 20px;
+    background-color: #004075;
+    font-size: 12px;
+    color: #99B3C8;
+    text-align: center;
+}
+.fltrt {
+    float: right;
+    margin-left: 8px;
+}
+.fltlft {
+    float: left;
+    margin-right: 8px;
+}
+.clearfloat {
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.vangst {
+    margin: 40px auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 320px;
+}
+.vangst fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 8px 0px;
+    padding: 8px 0px 24px 4px;
+}
+.vangst select {
+    font-size: 85%;
+    height: 30px;
+    margin-left: -4px;
+    margin-right: 6px;
+    margin-top: 6px;
+    border: 1px solid #DDD;
+    border-left: none;
+    border-right: none;
+}
+.vangst button.vangstextra {
+    width: 22px;
+    margin-left: -4px;
+    padding: 4px 4px 4px 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.vangst legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #004075;
+}
+.vangst select.vangstdag {
+    width: 66px;
+}
+.vangst select.vangstmaand {
+    width: 86px;
+}
+.vangst select.vangsttijd {
+    width: 66px;
+}
+.vangst select.vangsthsv {
+    width: 290px;
+}
+.vangst select.vangstsoort {
+    width: 132px;
+}
+.vangst select.vangstformaat {
+    width: 84px;
+}
+.vangst select.vangstaantal {
+    width: 70px;
+}
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    padding: 10px 20px 11px;
+    background-color: #24890d;
+    border: 0;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFF;
+    vertical-align: bottom;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color: #41A62A;
+    color: #FFF;
+}
+button:active,
+.button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    background-color: #55D737;
+}
