@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 18, 2015 at 11:40 AM
+-- Generation Time: Feb 18, 2015 at 01:59 PM
 -- Server version: 5.5.41-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `vangstenregistratie`
 --
-CREATE DATABASE IF NOT EXISTS `vangstenregistratie` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `vangstenregistratie`;
 
 -- --------------------------------------------------------
 

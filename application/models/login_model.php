@@ -22,7 +22,7 @@ class Login_model extends CI_Model{
             // If there is a user, then create session data
             $row = $query->row();
 
-            if(password_verify($password, $row->password))
+            if(crypt($password, '%$#') === $row->password)
             {
                 $data = array(
                     'userid' => $row->id,

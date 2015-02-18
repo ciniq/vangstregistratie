@@ -59,7 +59,7 @@ class register_model extends CI_Model{
         {
             $data = array(
                 'username' => $username,
-                'password' => password_hash($password, PASSWORD_DEFAULT),
+                'password' => crypt($password, '%$#'),
                 'firstname' => $firstname,
                 'lastname' => $lastname,
                 'vispasnr' => $vispasnr,
