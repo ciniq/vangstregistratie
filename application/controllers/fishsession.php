@@ -20,6 +20,9 @@ class Fishsession extends CI_Controller{
 
     public function registercatch()
     {
-        var_dump($_POST);
+        $this->load->model('fishsession_model');
+        $result = $this->fishsession_model->insertCatch();
+
+        echo $result;
     }
 }

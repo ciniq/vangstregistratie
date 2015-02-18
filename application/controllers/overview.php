@@ -11,7 +11,9 @@ class Overview extends CI_Controller
     public function index($data = array())
     {
         // Load our view to be displayed
-        $msg['data'] = $data;
+        $this->load->model('overview_model');
+
+        $msg['data'] = $this->overview_model->getOverview();
         $this->load->view('overview', $msg);
     }
 }

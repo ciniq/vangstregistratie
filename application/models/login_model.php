@@ -12,6 +12,7 @@ class Login_model extends CI_Model{
 
         // Prep the query
         $this->db->where('username', $username);
+        $this->db->where('active', true);
 
         // Run the query
         $query = $this->db->get('user');
@@ -24,13 +25,14 @@ class Login_model extends CI_Model{
             if(password_verify($password, $row->password))
             {
                 $data = array(
-                    'userid' => $row->userid,
+                    'userid' => $row->id,
                     'firstname' => $row->firstname,
                     'lastname' => $row->lastname,
                     'username' => $row->username,
                     'validated' => true,
                     'isadmin'  => $row->isadmin
                 );
+
                 $this->session->set_userdata($data);
                 return true;
             }
