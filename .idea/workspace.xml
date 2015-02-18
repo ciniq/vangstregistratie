@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/overview_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/fishsession.php" afterPath="$PROJECT_DIR$/application/controllers/fishsession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/fishsession.php" afterPath="$PROJECT_DIR$/application/views/fishsession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/fishsession_model.php" afterPath="$PROJECT_DIR$/application/models/fishsession_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/login_model.php" afterPath="$PROJECT_DIR$/application/models/login_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/overview.php" afterPath="$PROJECT_DIR$/application/controllers/overview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databaseSql/vangstenregistratie.sql" afterPath="$PROJECT_DIR$/databaseSql/vangstenregistratie.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vangstregistratie.iws" />
@@ -96,8 +91,8 @@
       <file leaf-file-name="overview_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/overview_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08964144" vertical-offset="0" max-vertical-offset="1004">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.64541835" vertical-offset="0" max-vertical-offset="1004">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -461,7 +456,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424248936661</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="overview basis staat.">
+      <created>1424255973395</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1424255973395</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -512,7 +513,8 @@
     <MESSAGE value="changed logout location&#10;Need to create an access class instead of this crappy login" />
     <MESSAGE value="Layout overgenomen van voorbeeld &#10;Tutorial map verwijderd" />
     <MESSAGE value="vangstregistratie basis toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="vangstregistratie basis toegevoegd" />
+    <MESSAGE value="overview basis staat." />
+    <option name="LAST_COMMIT_MESSAGE" value="overview basis staat." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -689,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/overview_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08964144" vertical-offset="0" max-vertical-offset="1004">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.64541835" vertical-offset="0" max-vertical-offset="1004">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding />
         </state>
       </provider>
