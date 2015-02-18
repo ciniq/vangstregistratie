@@ -17,4 +17,9 @@ class Fishsession extends CI_Controller{
         // to the user
         $this->load->view('fishsession', $result);
     }
+
+    public function registercatch()
+    {
+        var_dump($_POST);
+    }
 }
