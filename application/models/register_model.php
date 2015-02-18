@@ -17,42 +17,73 @@ class register_model extends CI_Model{
         $firstname = $this->security->xss_clean($this->input->post('firstname'));
         $lastname = $this->security->xss_clean($this->input->post('lastname'));
         $vispasnr = $this->security->xss_clean($this->input->post('vispasnr'));
-        $email = valid_email($this->security->xss_clean($this->input->post('email')));
-
+        $email = $this->security->xss_clean($this->input->post('email'));
+        $community  = $this->security->xss_clean($this->input->post('community'));
         $msg = '';
+
+
+        $this->db->where('username', $username);
+        $query = $this->db->get('user');
+        // Let's check if there are any results
+        if (0 < $query->num_rows)
+        {
+            $msg .= " - De gebruikersnaam is reeds in gebruik!</br>";
+        }
+
+        $this->db->where('email', $email);
+        $query = $this->db->get('user');
+        // Let's check if there are any results
+        if (0 < $query->num_rows)
+        {
+            $msg .= " - Dit email adres is reeds in gebruik!</br>";
+        }
+
+        $this->db->where('vispasnr', $vispasnr);
+        $query = $this->db->get('user');
+        // Let's check if there are any results
+        if (0 < $query->num_rows)
+        {
+            $msg .= " - Dit vispasnummer is reeds in gebruik!</br>";
+        }
+
         if ('' == $username)
         {
-            $msg .= "Gebruikersnaam niet ingevuld!</br>";
+            $msg .= " - Gebruikersnaam niet ingevuld!</br>";
         }
 
         if ('' == $password)
         {
-            $msg .= "Wachtwoord niet ingevuld!</br>";
+            $msg .= " - Wachtwoord niet ingevuld!</br>";
         }
 
         if ('' == $passwordcontroll)
         {
-            $msg .= "Controle wachtwoord niet ingevuld!</br>";
+            $msg .= " - Controle wachtwoord niet ingevuld!</br>";
         }
 
         if ($passwordcontroll !== $password)
         {
-            $msg .= 'Wachtwoorden zijn niet gelijk</br>';
+            $msg .= ' - Wachtwoorden zijn niet gelijk!</br>';
         }
 
         if ('' == $firstname)
         {
-            $msg .= "Voornaam niet ingevuld!</br>";
+            $msg .= " - Voornaam niet ingevuld!</br>";
         }
 
         if ('' == $lastname)
         {
-            $msg .= "Achtersnaam niet ingevuld!</br>";
+            $msg .= " - Achtersnaam niet ingevuld!</br>";
         }
 
         if ('' == $email)
         {
-            $msg .= "email niet ingevuld!</br>";
+            $msg .= " - Email niet ingevuld!</br>";
+        }
+
+        if (!valid_email($email))
+        {
+            $msg .= " - Email niet geldig!</br>";
         }
 
         if ('' == $msg)
@@ -63,6 +94,7 @@ class register_model extends CI_Model{
                 'firstname' => $firstname,
                 'lastname' => $lastname,
                 'vispasnr' => $vispasnr,
+                'community' => $community,
                 'email' => $email
             );
 
@@ -74,7 +106,7 @@ class register_model extends CI_Model{
 
         return  array(
             'save_success' => false,
-            'msg' => "Er is iets fout gegaan:</br>". $msg,
+            'msg' => $msg,
             'userdata' =>  array(
                 'username' => $username,
                 'password' => $password,
@@ -82,6 +114,7 @@ class register_model extends CI_Model{
                 'firstname' => $firstname,
                 'lastname' => $lastname,
                 'vispasnr' => $vispasnr,
+                'community' => $community,
                 'email' => $email
             )
         );

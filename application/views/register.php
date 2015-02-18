@@ -19,19 +19,20 @@
             <li>VBC Geul &amp; Zijbeken</li>
         </ul>
     </div><!-- end .header -->
-<!--    <div class="menu">-->
-<!--        <ul class="nav">-->
-<!--            <li><a href="#">log uit</a></li>-->
-<!--            <li><a href="#">overzicht</a></li>-->
-<!--            <li><a href="#">nieuwe vangst</a></li>-->
-<!--        </ul>-->
-<!--    </div><!-- end .menu -->-->
     <div class="content">
         <div id='login_form'>
             <form action='<?php echo base_url();?>register/process' method='post' name='register'>
                 <h2>Registreren</h2>
                 <br />
-                <?php if(isset($data['msg'])) echo $data['msg'];?>
+
+                <?php
+                    if(isset($data['msg']))
+                    {
+                        echo '<fieldset class="error"><legend>Er is iets fout gegaan</legend>';
+                        echo $data['msg'];
+                        echo '</fieldset>';
+                    }
+                ?>
 
                 <table class="registration">
                     <tr>
@@ -55,8 +56,11 @@
                         <td><input type='text' name='lastname' id='lastname' size='25' value="<?php if(isset($data['userdata']['lastname'])) echo $data['userdata']['lastname'];?>" /></td>
                     </tr>
                     <tr>
-                        <td><label for='vispasnr'>Vispas nummer</label></td>
+                        <td><label for='community'>Vispas nummer</label></td>
                         <td><input type='text' name='vispasnr' id='vispasnr' size='25' value="<?php if(isset($data['userdata']['vispasnr'])) echo $data['userdata']['vispasnr'];?>" /></td>
+                    </tr><tr>
+                        <td><label for='vispasnr'>Vereniging</label></td>
+                        <td><input type='text' name='community' id='community' size='25' value="<?php if(isset($data['userdata']['community'])) echo $data['userdata']['community'];?>" /></td>
                     </tr>
                     <tr>
                         <td><label for='email'>Email</label></td>

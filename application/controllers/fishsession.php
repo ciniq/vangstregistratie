@@ -24,7 +24,10 @@ class Fishsession extends CI_Controller{
         $this->load->model('fishsession_model');
         $result = $this->fishsession_model->insertCatch();
 
-        echo $result;
+        if (!$result)
+        {
+            $this->load->view('fishsession', array('msg' => 'Er is iets fout gegaan met opslaan'));
+        }
     }
 
     private function check_isvalidated(){

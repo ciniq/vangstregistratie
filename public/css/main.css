@@ -256,3 +256,16 @@ input[type="reset"]:active,
 input[type="submit"]:active {
     background-color: #55D737;
 }
+
+.error{
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 0px 24px 4px;
+}
+.error legend
+{
+    color: red;
+}
