@@ -2,10 +2,10 @@
 
 class Overview extends CI_Controller
 {
-
     function __construct()
     {
         parent::__construct();
+        $this->check_isvalidated();
     }
 
     public function index($data = array())
@@ -15,5 +15,11 @@ class Overview extends CI_Controller
 
         $msg['data'] = $this->overview_model->getOverview();
         $this->load->view('overview', $msg);
+    }
+
+    private function check_isvalidated(){
+        if(! $this->session->userdata('validated')){
+            redirect('login');
+        }
     }
 }

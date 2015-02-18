@@ -4,6 +4,7 @@ class Register extends CI_Controller{
 
     function __construct(){
         parent::__construct();
+        $this->check_isvalidated();
     }
 
     public function index($data = array()){
@@ -27,6 +28,12 @@ class Register extends CI_Controller{
             // If user did validate,
             // Send them to members area
             redirect('welcome');
+        }
+    }
+
+    private function check_isvalidated(){
+        if(! $this->session->userdata('validated')){
+            redirect('login');
         }
     }
 }

@@ -4,6 +4,7 @@ class Fishsession extends CI_Controller{
 
     function __construct(){
         parent::__construct();
+        $this->check_isvalidated();
     }
 
     public function index($msg = NULL){
@@ -24,5 +25,11 @@ class Fishsession extends CI_Controller{
         $result = $this->fishsession_model->insertCatch();
 
         echo $result;
+    }
+
+    private function check_isvalidated(){
+        if(! $this->session->userdata('validated')){
+            redirect('login');
+        }
     }
 }
