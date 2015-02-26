@@ -8,8 +8,11 @@ class Register extends CI_Controller{
 
     public function index($data = array()){
 
+        $this->load->model('register_model');
+        $baseData = $this->register_model->getBaseData();
+
         // Load our view to be displayed
-        $msg['data'] = $data;
+        $msg['data'] = array_merge($baseData, $data);
         $this->load->view('register', $msg);
     }
 

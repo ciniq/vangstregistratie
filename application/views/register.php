@@ -60,7 +60,24 @@
                         <td><input type='text' name='vispasnr' id='vispasnr' size='25' value="<?php if(isset($data['userdata']['vispasnr'])) echo $data['userdata']['vispasnr'];?>" /></td>
                     </tr><tr>
                         <td><label for='vispasnr'>Vereniging</label></td>
-                        <td><input type='text' name='community' id='community' size='25' value="<?php if(isset($data['userdata']['community'])) echo $data['userdata']['community'];?>" /></td>
+                        <td>
+                            <select name="community" class="vangsthsv" id="community">
+                                <option value="0">eigen vereniging</option>
+                                <?php
+                                foreach($data['communities'] as $com)
+                                {
+                                    if(isset($data['userdata']['community']))
+                                    {
+                                        echo '<option value="'.$com->id.'" '.($com->id == $data['userdata']['community'] ? 'selected="selected"' : '').'>'.$com->displayname.'</option '.($com->id == $data['userdata']['community'] ? 'selected="selected"' : '').'>';
+                                    }
+                                    else
+                                    {
+                                        echo '<option value="'.$com->id.'">'.$com->displayname.'</option>';
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for='email'>Email</label></td>

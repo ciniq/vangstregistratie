@@ -40,6 +40,12 @@
                         <th>Aantal</th>
                         <th>Lengte</th>
                     </tr>
+                <?php
+                    foreach($data as $fish)
+                    {
+                        echo '<tr><td>'.$fish->date.'</td><td>'.$fish->species.'</td><td>'.$fish->amount.'</td><td>'.$fish->size.'</td></tr>';
+                    }
+                ?>
                 </table>
             </form>
         </div>

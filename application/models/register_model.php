@@ -6,6 +6,13 @@ class register_model extends CI_Model{
         parent::__construct();
     }
 
+    function getBaseData()
+    {
+        $communities = $this->db->get('community')->result();
+
+        return array('communities' => $communities);
+    }
+
     /**
      * register a new user
      */
@@ -94,7 +101,7 @@ class register_model extends CI_Model{
                 'firstname' => $firstname,
                 'lastname' => $lastname,
                 'vispasnr' => $vispasnr,
-                'community' => $community,
+                'refto_community_id' => $community,
                 'email' => $email
             );
 

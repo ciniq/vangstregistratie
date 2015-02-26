@@ -36,7 +36,7 @@ class Fishsession_model extends CI_Model{
                 'refto_community_id' => $community,
                 'start' => $from,
                 'stop' => $to,
-                'date' => date( 'Y-m-d', mktime(0, 0, 0, $month, $day, date('Y')))
+                'date' => date( 'Y-m-d', mktime(0, 0, 0, $month, $day, date('Y'))),
             );
 
             $this->db->insert('fishsession', $data);
@@ -50,7 +50,7 @@ class Fishsession_model extends CI_Model{
                        'refto_fishsession_id' => $fishsessionid,
                        'refto_size_id' => $catch['size'],
                        'refto_species_id' => $catch['species'],
-                       'refto_size_id' => $catch['amount']
+                       'amount' => $catch['amount']
                     );
 
                     $this->db->insert('catch', $data);

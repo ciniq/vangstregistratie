@@ -176,8 +176,8 @@ $('#send').click(function(){
     })
     .done(function( msg ) {
         // doorsturen naar overzicht
-       // alert( "De vangst is geregistreerd, u wordt doorgestuurd." );
-      //  document.location = "<?php echo base_url();?>overview";
+        alert( "De vangst is geregistreerd, u wordt doorgestuurd." );
+        document.location = "<?php echo base_url();?>overview";
     });
 
 });
