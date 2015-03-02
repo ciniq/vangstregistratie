@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/fishsession.php" afterPath="$PROJECT_DIR$/application/views/fishsession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/fishsession_model.php" afterPath="$PROJECT_DIR$/application/models/fishsession_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/overview.php" afterPath="$PROJECT_DIR$/application/views/overview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/register.php" afterPath="$PROJECT_DIR$/application/controllers/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/register.php" afterPath="$PROJECT_DIR$/application/views/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/register_model.php" afterPath="$PROJECT_DIR$/application/models/register_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-icons_228ef1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-icons_ef8c08_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-icons_ffd27a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.structure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.structure.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/jquery-ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/jquery/external/jquery/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vangstregistratie.iws" />
@@ -36,7 +54,7 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="720">
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="720">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
@@ -46,13 +64,12 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.333334" vertical-offset="594" max-vertical-offset="1872">
+            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1872">
               <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
               <folding>
                 <marker date="1424934874060" expanded="true" signature="1364:1441" placeholder="..." />
                 <marker date="1424934874060" expanded="true" signature="4565:4605" placeholder="..." />
                 <marker date="1424934874060" expanded="true" signature="4859:4934" placeholder="..." />
-                <marker date="1424934874060" expanded="true" signature="5112:5201" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -81,8 +98,8 @@
       <file leaf-file-name="fishsession.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19348268" vertical-offset="2492" max-vertical-offset="3474">
-              <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.78411406" vertical-offset="2470" max-vertical-offset="3474">
+              <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -91,7 +108,7 @@
       <file leaf-file-name="fishsession_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.333332" vertical-offset="36" max-vertical-offset="1242">
+            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1242">
               <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding />
             </state>
@@ -141,7 +158,7 @@
       <file leaf-file-name="register_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/register_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="40.666668" vertical-offset="1296" max-vertical-offset="2412">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="2412">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -201,7 +218,7 @@
       <file leaf-file-name="overview.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/overview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.666666" vertical-offset="0" max-vertical-offset="1134">
+            <state vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1134">
               <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
               <folding />
             </state>
@@ -211,7 +228,7 @@
       <file leaf-file-name="overview.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/overview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="540">
+            <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="540">
               <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding />
             </state>
@@ -322,7 +339,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -425,6 +441,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,15 +473,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -570,7 +587,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424273658673</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="let op community moet nog een dropdown worden">
+      <created>1424935376601</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1424935376601</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,7 +606,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.171875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.171875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -707,7 +730,6 @@
             <marker date="1424934874060" expanded="true" signature="1364:1441" placeholder="..." />
             <marker date="1424934874060" expanded="true" signature="4565:4605" placeholder="..." />
             <marker date="1424934874060" expanded="true" signature="4859:4934" placeholder="..." />
-            <marker date="1424934874060" expanded="true" signature="5112:5201" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -988,7 +1010,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="720">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="720">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -996,20 +1018,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.333334" vertical-offset="594" max-vertical-offset="1872">
+        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1872">
           <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
           <folding>
             <marker date="1424934874060" expanded="true" signature="1364:1441" placeholder="..." />
             <marker date="1424934874060" expanded="true" signature="4565:4605" placeholder="..." />
             <marker date="1424934874060" expanded="true" signature="4859:4934" placeholder="..." />
-            <marker date="1424934874060" expanded="true" signature="5112:5201" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/overview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.666666" vertical-offset="0" max-vertical-offset="1134">
+        <state vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1134">
           <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding />
         </state>
@@ -1017,7 +1038,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/overview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="540">
           <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding />
         </state>
@@ -1025,7 +1046,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/register_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="40.666668" vertical-offset="1296" max-vertical-offset="2412">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="2412">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
@@ -1033,7 +1054,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.333332" vertical-offset="36" max-vertical-offset="1242">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1242">
           <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
           <folding />
         </state>
@@ -1041,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19348268" vertical-offset="2492" max-vertical-offset="3474">
-          <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.78411406" vertical-offset="2470" max-vertical-offset="3474">
+          <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
           <folding />
         </state>
       </provider>
