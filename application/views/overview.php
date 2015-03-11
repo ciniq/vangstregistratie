@@ -24,6 +24,12 @@
                 <li><a href="<?php echo base_url();?>login/logout">log uit</a></li>
                 <li><a href="<?php echo base_url();?>overview">overzicht</a></li>
                 <li><a href="<?php echo base_url();?>fishsession">nieuwe vangst</a></li>
+                <?php
+                    if($user['isadmin'])
+                    {
+                        echo '<li><a href="'.base_url().'admin">admin</a></li>';
+                    }
+                ?>
             </ul>
         </div><!-- end .menu -->
     <div class="content">

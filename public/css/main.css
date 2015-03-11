@@ -219,6 +219,23 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     color: black;
 }
 
+.users {
+    width: 100%;
+    margin: 10px;
+    color: black;
+}
+
+.users tr {
+    text-align: left;
+
+}
+
+.users th {
+
+    padding: 5px 0 5px 0;
+}
+
+
 button,
 .button,
 input[type="button"],

@@ -14,6 +14,7 @@ class Overview extends CI_Controller
         $this->load->model('overview_model');
 
         $msg['data'] = $this->overview_model->getOverview();
+        $msg['user'] = $this->session->all_userdata();
         $this->load->view('overview', $msg);
     }
 
