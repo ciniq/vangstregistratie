@@ -30,8 +30,27 @@ class Overview_model extends CI_Model
             $this->db->join('species sp', 'c.refto_species_id = sp.id');
             $this->db->where('fs.refto_user_id = '.$userid);
 
-            $data = $this->db->get();
-            return $data->result();
+            $data = $this->db->get()->result();
+
+            $retval = array();
+
+            foreach ($data as $d)
+            {
+                $date = date('d-m-Y', strtotime($d->date));
+                $key = $d->community.'        ('.sprintf('%02d',$d->start).':00 tm '.sprintf('%02d',$d->stop).':00)';
+                if(!isset($retval[$date][$key]))
+                {
+                    $retval[$date][$key] = array();
+                }
+
+                $retval[$date][$key][] = array(
+                    'species' => $d->species,
+                    'amount' => $d->amount,
+                    'size' => $d->size
+                );
+            }
+
+            return $retval;
         }
     }
 }

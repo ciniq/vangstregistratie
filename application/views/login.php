@@ -27,7 +27,13 @@
                 <form action='<?php echo base_url();?>login/process' method='post' name='process'>
                     <h2>Inloggen</h2>
                     <br />
-                     <?php if(! is_null($msg)) echo $msg;?>
+                     <?php
+                     if(! is_null($msg)){
+                         echo '<fieldset class="error"><legend>Er is iets fout gegaan</legend>';
+                         echo $msg;
+                         echo '</fieldset>';
+                     }
+                     ?>
                     <table class="login">
                         <tr>
                             <td><label for='username'>Gebruikersnaam</label></td>

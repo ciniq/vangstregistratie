@@ -31,6 +31,11 @@ class Fishsession_model extends CI_Model{
             $community = $this->security->xss_clean($this->input->post('community'));
             $catches = $this->security->xss_clean($this->input->post('catches'));
 
+            if(0 == (int)$community)
+            {
+                $community = $userid['refto_community_id'];
+            }
+
             $data = array(
                 'refto_user_id' => $userid,
                 'refto_community_id' => $community,
@@ -60,5 +65,4 @@ class Fishsession_model extends CI_Model{
         }
         return false;
     }
-
 }

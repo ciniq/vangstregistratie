@@ -9,6 +9,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic' rel='stylesheet' type='text/css' media='all'>
     <link href='<?php echo base_url(); ?>css/main.css' rel='stylesheet' type='text/css'>
     <link href='http://www.vr-geul.nl' rel='canonical'>
+    <script src="<?php echo base_url(); ?>jquery/external/jquery/jquery.js"></script>
+    <script src="<?php echo base_url(); ?>jquery/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -33,32 +35,58 @@
             </ul>
         </div><!-- end .menu -->
     <div class="content">
-        <div id='login_form'>
-            <form action='<?php echo base_url();?>register/process' method='post' name='register'>
-                <h2>Vangst overzicht</h2>
-                <br />
-                <?php if(isset($data['msg'])) echo $data['msg'];?>
+        <div id='vangsten'>
 
-                <table class="catches">
-                    <tr>
-                        <th>Datum</th>
-                        <th>Soort</th>
-                        <th>Aantal</th>
-                        <th>Lengte</th>
-                    </tr>
-                <?php
-                    foreach($data as $fish)
+            <h2>Vangst overzicht</h2>
+            <br />
+            <?php if(isset($data['msg'])) echo $data['msg'];?>
+            <div id="accordion">
+
+
+            <?php
+           // var_dump($data);
+            foreach($data as $date => $catchday)
+            {
+                echo '<h3 class="overviewdatum">'.$date.'</h3>';
+                echo '<div>';
+                foreach($catchday as $key => $catch)
+                {
+                    echo  '<h2>'.$key.'</h2>';
+                    echo '<table class="overview">
+                            <tr>
+                                <th>Soort</th>
+                                <th>Lengte</th>
+                                <th>Aantal</th>
+                            </tr>';
+
+                    foreach($catch as $c)
                     {
-                        echo '<tr><td>'.$fish->date.'</td><td>'.$fish->species.'</td><td>'.$fish->amount.'</td><td>'.$fish->size.'</td></tr>';
+                        echo '<tr><td>'.$c['species'].'</td><td>'.$c['size'].'</td><td>'.$c['amount'].'</td></tr>';
                     }
-                ?>
-                </table>
-            </form>
+
+                    echo '</table>';
+
+
+
+                }
+                echo '</div>';
+            }
+            ?>
+
+
+            </div>
         </div>
     </div><!-- end .content -->
     <div class="footer">
         <p>&copy; Stichting Visstand Beheer Commissie Geul &amp; Zijbeken</p>
     </div><!-- end .footer -->
 </div><!-- end .container -->
+
+<script>
+    $(function() {
+        $( "#accordion" ).accordion();
+    });
+
+</script>
 </body>
 </html>

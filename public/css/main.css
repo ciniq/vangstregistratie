@@ -286,3 +286,30 @@ input[type="submit"]:active {
 {
     color: red;
 }
+
+.overview
+{
+    width: 100%;
+    padding: 10px;
+    color: black;
+}
+
+.overview th
+{
+    text-align: left;
+    border-bottom: #000 1px solid;
+    height: 20px;
+}
+
+.overviewdatum
+{
+    background: grey;
+    cursor: pointer;
+    padding: 5px 0 5px 10px;
+}
+
+#accordion
+{
+    width: 90%;
+    margin-left: 10px;
+}

@@ -21,7 +21,8 @@ class Login extends CI_Controller{
         // Now we verify the result
         if(! $result){
             // If user did not validate, then show them login page again
-            $this->index();
+            $msg = 'Login mislukt,<br/><br/>De account gegevens zijn onjuist of uw account is nog niet geactiveert';
+            $this->index($msg);
         }else{
             // If user did validate,
             // Send them to members area
