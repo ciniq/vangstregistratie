@@ -28,7 +28,6 @@ class register_model extends CI_Model{
         $community  = $this->security->xss_clean($this->input->post('community'));
         $msg = '';
 
-
         $this->db->where('username', $username);
         $query = $this->db->get('user');
         // Let's check if there are any results
@@ -104,6 +103,7 @@ class register_model extends CI_Model{
                 'refto_community_id' => $community,
                 'email' => $email
             );
+
 
             $this->db->insert('user', $data);
 

@@ -62,7 +62,6 @@
                         <td><label for='vispasnr'>Vereniging</label></td>
                         <td>
                             <select name="community" class="vangsthsv" id="community">
-                                <option value="0">eigen vereniging</option>
                                 <?php
                                 foreach($data['communities'] as $com)
                                 {
