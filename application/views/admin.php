@@ -35,6 +35,7 @@
         </ul>
     </div><!-- end .menu -->
     <div class="content">
+        <div class="logged">Ingelogt als: <?php echo $user['firstname'] .' '. $user['lastname'] ; ?></div>
         <div id='login_form'>
             <h2>Gebruikers overzicht</h2>
             <table class="users" id="usertable">

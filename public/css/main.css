@@ -313,3 +313,10 @@ input[type="submit"]:active {
     width: 90%;
     margin-left: 10px;
 }
+
+.logged {
+    float: right;
+    font-size: 12px;
+    color: #000;
+    margin-right: 10px;
+}

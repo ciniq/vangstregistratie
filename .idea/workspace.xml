@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/register.php" afterPath="$PROJECT_DIR$/application/views/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/register_model.php" afterPath="$PROJECT_DIR$/application/models/register_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin.php" afterPath="$PROJECT_DIR$/application/views/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/fishsession.php" afterPath="$PROJECT_DIR$/application/controllers/fishsession.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/fishsession.php" afterPath="$PROJECT_DIR$/application/views/fishsession.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/overview.php" afterPath="$PROJECT_DIR$/application/views/overview.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vangstregistratie.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <file path="/Dummy.txt" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426610989950" ignored="false" />
+    <file path="/Dummy.txt" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426611778726" ignored="false" />
     <file path="/overview.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426342678468" ignored="false" />
     <file path="/login_model.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426099425713" ignored="false" />
-    <file path="/admin.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426103637300" ignored="false" />
+    <file path="/admin.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426611906350" ignored="false" />
     <file path="/admin_model.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426103281335" ignored="false" />
-    <file path="/main.css" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426342977152" ignored="false" />
+    <file path="/main.css" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426612277175" ignored="false" />
     <file path="/overview_model.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426341619408" ignored="false" />
     <file path="/login.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426343435970" ignored="false" />
     <file path="/fishsession_model.php" changelist="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" time="1426343967114" ignored="false" />
@@ -38,23 +41,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fishsession_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
+      <file leaf-file-name="overview.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/overview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="51" selection-start="2114" selection-end="2114" vertical-scroll-proportion="-23.076923">
-              <folding />
+            <state line="33" column="18" selection-start="1497" selection-end="1687" vertical-scroll-proportion="-21.576923">
+              <folding>
+                <marker date="1426612322945" expanded="true" signature="2430:2640" placeholder="..." />
+                <marker date="1426612322945" expanded="true" signature="2463:2640" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/overview.php">
+      <file leaf-file-name="fishsession.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="30" selection-start="1935" selection-end="1944" vertical-scroll-proportion="-0.65384614">
-              <folding>
-                <marker date="1426342827351" expanded="true" signature="2323:2533" placeholder="..." />
-                <marker date="1426342827351" expanded="true" signature="2356:2533" placeholder="..." />
-              </folding>
+            <state line="34" column="13" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.46162927">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,16 +65,25 @@
       <file leaf-file-name="fishsession.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="49" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+            <state line="14" column="60" selection-start="410" selection-end="410" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fishsession.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="76" selection-start="655" selection-end="815" vertical-scroll-proportion="0.0">
+            <state line="15" column="57" selection-start="401" selection-end="450" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -80,16 +92,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="271" column="27" selection-start="4848" selection-end="4848" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="39" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+            <state line="290" column="1" selection-start="5123" selection-end="5123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,14 +101,8 @@
       <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="35" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1426343530590" expanded="true" signature="1694:1767" placeholder="..." />
-                <marker date="1426343530590" expanded="true" signature="1723:1767" placeholder="..." />
-                <marker date="1426343530590" expanded="true" signature="1963:2007" placeholder="..." />
-                <marker date="1426343530590" expanded="true" signature="2203:2345" placeholder="..." />
-                <marker date="1426343530590" expanded="true" signature="2545:2642" placeholder="..." />
-              </folding>
+            <state line="24" column="29" selection-start="1161" selection-end="1161" vertical-scroll-proportion="-8.076923">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,20 +116,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register_model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="register_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/register_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.5863747">
+            <state line="53" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-9.45098">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/overview_model.php">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="38" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="37" column="106" selection-start="1705" selection-end="1803" vertical-scroll-proportion="-24.192308">
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1426612322939" expanded="true" signature="1191:1499" placeholder="..." />
+                <marker date="1426612322939" expanded="true" signature="1216:1499" placeholder="..." />
+                <marker date="1426612322939" expanded="true" signature="1695:1819" placeholder="..." />
+                <marker date="1426612322939" expanded="true" signature="1923:2306" placeholder="..." />
+                <marker date="1426612322939" expanded="true" signature="1944:2199" placeholder="..." />
+                <marker date="1426612322939" expanded="true" signature="3220:3257" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,15 +165,17 @@
         <option value="$PROJECT_DIR$/application/controllers/overview.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/application/models/admin_model.php" />
-        <option value="$PROJECT_DIR$/application/views/admin.php" />
         <option value="$PROJECT_DIR$/application/models/overview_model.php" />
-        <option value="$PROJECT_DIR$/application/views/overview.php" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
-        <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
         <option value="$PROJECT_DIR$/application/models/fishsession_model.php" />
         <option value="$PROJECT_DIR$/application/views/register.php" />
         <option value="$PROJECT_DIR$/application/models/register_model.php" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/application/views/admin.php" />
+        <option value="$PROJECT_DIR$/application/views/login.php" />
+        <option value="$PROJECT_DIR$/application/views/overview.php" />
+        <option value="$PROJECT_DIR$/application/controllers/fishsession.php" />
+        <option value="$PROJECT_DIR$/application/views/fishsession.php" />
       </list>
     </option>
   </component>
@@ -460,13 +467,18 @@
       <created>1426344120835</created>
       <updated>1426344120835</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="vispasnr error opgelost">
+      <created>1426611781400</created>
+      <updated>1426611781400</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961932" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -482,7 +494,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -539,7 +550,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="overview afgemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="vispasnr error opgelost" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -568,21 +579,12 @@
     <MESSAGE value="jQuery" />
     <MESSAGE value="admin page toegevoegd" />
     <MESSAGE value="overview afgemaakt" />
+    <MESSAGE value="vispasnr error opgelost" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="9" selection-start="6226" selection-end="6281" vertical-scroll-proportion="0.34275618" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/admin_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0" />
@@ -593,11 +595,6 @@
         <state line="4227" column="17" selection-start="117149" selection-end="117149" vertical-scroll-proportion="0.52685714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/overview.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="57" selection-start="405" selection-end="416" vertical-scroll-proportion="0.0">
@@ -605,43 +602,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="271" column="27" selection-start="4848" selection-end="4848" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1426343530590" expanded="true" signature="1694:1767" placeholder="..." />
-            <marker date="1426343530590" expanded="true" signature="1723:1767" placeholder="..." />
-            <marker date="1426343530590" expanded="true" signature="1963:2007" placeholder="..." />
-            <marker date="1426343530590" expanded="true" signature="2203:2345" placeholder="..." />
-            <marker date="1426343530590" expanded="true" signature="2545:2642" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="39" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="49" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="76" selection-start="655" selection-end="815" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -660,16 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/overview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="30" selection-start="1935" selection-end="1944" vertical-scroll-proportion="-0.65384614">
-          <folding>
-            <marker date="1426342827351" expanded="true" signature="2323:2533" placeholder="..." />
-            <marker date="1426342827351" expanded="true" signature="2356:2533" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="24" selection-start="5037" selection-end="5037" vertical-scroll-proportion="-31.423077">
@@ -679,7 +632,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/register_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.5863747">
+        <state line="53" column="0" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-9.45098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="290" column="1" selection-start="5123" selection-end="5123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="106" selection-start="1705" selection-end="1803" vertical-scroll-proportion="-24.192308">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1426612322939" expanded="true" signature="1191:1499" placeholder="..." />
+            <marker date="1426612322939" expanded="true" signature="1216:1499" placeholder="..." />
+            <marker date="1426612322939" expanded="true" signature="1695:1819" placeholder="..." />
+            <marker date="1426612322939" expanded="true" signature="1923:2306" placeholder="..." />
+            <marker date="1426612322939" expanded="true" signature="1944:2199" placeholder="..." />
+            <marker date="1426612322939" expanded="true" signature="3220:3257" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="29" selection-start="1161" selection-end="1161" vertical-scroll-proportion="-8.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="57" selection-start="401" selection-end="450" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="60" selection-start="410" selection-end="410" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/overview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="18" selection-start="1497" selection-end="1687" vertical-scroll-proportion="-21.576923">
+          <folding>
+            <marker date="1426612322945" expanded="true" signature="2430:2640" placeholder="..." />
+            <marker date="1426612322945" expanded="true" signature="2463:2640" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.46162927">
           <folding />
         </state>
       </provider>

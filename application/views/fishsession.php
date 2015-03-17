@@ -26,9 +26,16 @@
             <li><a href="<?php echo base_url();?>login/logout">log uit</a></li>
             <li><a href="<?php echo base_url();?>overview">overzicht</a></li>
             <li><a href="<?php echo base_url();?>fishsession">nieuwe vangst</a></li>
+            <?php
+            if($user['isadmin'])
+            {
+                echo '<li><a href="'.base_url().'admin">admin</a></li>';
+            }
+            ?>
         </ul>
     </div><!-- end .menu -->
     <div class="content">
+        <div class="logged">Ingelogt als: <?php echo $user['firstname'] .' '. $user['lastname'] ; ?></div>
         <div id='login_form'>
             <div class='vangst' id="vangst">
                 <h2>Vangst toevoegen</h2>
