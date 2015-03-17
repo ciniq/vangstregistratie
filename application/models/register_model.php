@@ -111,6 +111,9 @@ class register_model extends CI_Model{
                 'msg' => "U bent geregistreerd, een administrator zal u spoedig toegang verlenen.");
         }
 
+
+//        todo: mailing toevoegen
+
         return  array(
             'save_success' => false,
             'msg' => $msg,
