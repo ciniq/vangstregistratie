@@ -181,14 +181,20 @@ $('#send').click(function(){
         url: "fishsession/registercatch",
         data: catchData
     })
-    .done(function( msg ) {
-        // doorsturen naar overzicht
-        alert( "De vangst is geregistreerd, u wordt doorgestuurd." );
-        document.location = "<?php echo base_url();?>overview";
+    .done(function(result) {
+        result = JSON.parse(result);
+        if(result['status'])
+        {
+            // doorsturen naar overzicht
+            alert( "De vangst is geregistreerd, u wordt doorgestuurd." );
+            document.location = "<?php echo base_url();?>overview";
+        }
+        else
+        {
+            alert(result['msg'])
+        }
     });
-
 });
-
 
 </script>
 </body>

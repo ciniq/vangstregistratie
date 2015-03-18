@@ -20,6 +20,7 @@ class Fishsession_model extends CI_Model{
 
     public function insertCatch()
     {
+        $retval = array('status' => false, 'msg' => '');
         $user = $this->session->all_userdata();
         if ($user)
         {
@@ -36,33 +37,80 @@ class Fishsession_model extends CI_Model{
                 $community = $user['refto_community_id'];
             }
 
-            $data = array(
-                'refto_user_id' => $userid,
-                'refto_community_id' => $community,
-                'start' => $from,
-                'stop' => $to,
-                'date' => date( 'Y-m-d', mktime(0, 0, 0, $month, $day, date('Y'))),
-            );
+            $retval['status'] = $this->checkInput($day, $month, $from, $to);
 
-            $this->db->insert('fishsession', $data);
-            $fishsessionid = $this->db->insert_id();
-
-            foreach($catches as $catch)
+            if($retval['status'])
             {
-                if($catch['species'] && $catch['size'] && $catch['amount'])
-                {
-                    $data = array(
-                       'refto_fishsession_id' => $fishsessionid,
-                       'refto_size_id' => $catch['size'],
-                       'refto_species_id' => $catch['species'],
-                       'amount' => $catch['amount']
-                    );
+                $data = array(
+                    'refto_user_id' => $userid,
+                    'refto_community_id' => $community,
+                    'start' => $from,
+                    'stop' => $to,
+                    'date' => date( 'Y-m-d', mktime(0, 0, 0, $month, $day, date('Y'))),
+                );
 
-                    $this->db->insert('catch', $data);
+                $this->db->insert('fishsession', $data);
+                $fishsessionid = $this->db->insert_id();
+
+                foreach($catches as $catch)
+                {
+                    if($catch['species'] && $catch['size'] && $catch['amount'])
+                    {
+                        $retval['status'] = $this->checkCatch($catch['species'], $catch['size'], $catch['amount']);
+
+                        if ($retval['status'])
+                        {
+                            $data = array(
+                                'refto_fishsession_id' => $fishsessionid,
+                                'refto_size_id' => $catch['size'],
+                                'refto_species_id' => $catch['species'],
+                                'amount' => $catch['amount']
+                            );
+
+                            $this->db->insert('catch', $data);
+                        }
+                        else
+                        {
+                             $retval['msg'] = 'Er is een fout opgetreden, controlleer de vangsgegevens';
+                        }
+                    }
+                    else
+                    {
+                        $retval['status'] = false;
+                        $retval['msg'] = 'Er is een fout opgetreden, controlleer de vangsgegevens';
+                    }
                 }
             }
-            return true;
+            else
+            {
+                $retval['msg'] = 'Er is een fout opgetreden, controlleer de datum';
+            }
         }
-        return false;
+        return $retval;
+    }
+
+    private function checkInput($day, $month, $from, $to)
+    {
+        if(!is_numeric($day)){return false;}
+        if(!is_numeric($month)){return false;}
+
+        $from = explode(':', $from);
+        if(!is_numeric($from[0])){return false;}
+
+        $to = explode(':', $to);
+        if(!is_numeric($to[0])){return false;}
+
+        if((int)$to[0] <= (int)$from[0]){return false;}
+
+        return true;
+    }
+
+    private function checkCatch($species, $size, $amount)
+    {
+        if(!is_numeric($species)){return false;}
+        if(!is_numeric($size)){return false;}
+        if(!is_numeric($amount)){return false;}
+
+        return true;
     }
 }
