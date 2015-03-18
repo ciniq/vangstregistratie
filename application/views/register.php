@@ -55,11 +55,9 @@
                         <td><label for='lastname'>Achternaam</label></td>
                         <td><input type='text' name='lastname' id='lastname' size='25' value="<?php if(isset($data['userdata']['lastname'])) echo $data['userdata']['lastname'];?>" /></td>
                     </tr>
+
                     <tr>
-                        <td><label for='community'>Vispas nummer</label></td>
-                        <td><input type='text' name='vispasnr' id='vispasnr' size='25' value="<?php if(isset($data['userdata']['vispasnr'])) echo $data['userdata']['vispasnr'];?>" /></td>
-                    </tr><tr>
-                        <td><label for='vispasnr'>Vereniging</label></td>
+                        <td><label for='community'>Vereniging</label></td>
                         <td>
                             <select name="community" class="vangsthsv" id="community">
                                 <?php
@@ -77,6 +75,10 @@
                                 ?>
                             </select>
                         </td>
+                    </tr>
+                    <tr>
+                        <td><label for='vispasnr'>Vispas nummer</label></td>
+                        <td><input type='text' name='vispasnr' id='vispasnr' size='25' value="<?php if(isset($data['userdata']['vispasnr'])) echo $data['userdata']['vispasnr'];?>" /></td>
                     </tr>
                     <tr>
                         <td><label for='email'>Email</label></td>

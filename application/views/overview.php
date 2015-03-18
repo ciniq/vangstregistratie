@@ -52,7 +52,7 @@
                 echo '<div>';
                 foreach($catchday as $key => $catch)
                 {
-                    echo  '<h2>'.$key.'</h2>';
+                    echo  '<h4>'.$key.'</h4>';
                     echo '<table class="overview">
                             <tr>
                                 <th>Soort</th>
