@@ -38,7 +38,7 @@ class Overview_model extends CI_Model
             foreach ($data as $d)
             {
                 $date = date('d-m-Y', strtotime($d->date));
-                $key = $d->community.'        ('.sprintf('%02d',$d->start).'-'.sprintf('%02d',$d->stop).'u)';
+                $key = $d->community.'        ('.$d->start.'-'.$d->stop.'u)';
                 if(!isset($retval[$date][$key]))
                 {
                     $retval[$date][$key] = array();
