@@ -11,9 +11,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0;
     vertical-align: baseline;
 }
-body {
+html, body {
     font: 16px/1.0 Lato, sans-serif;
-    background-color: #333;
+    background-color: #E4E4E4;
     color: #FFF;
 }
 ul, ol, dl {
@@ -31,15 +31,15 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
     font-size: 18px;
 }
+h2 {
+    padding-left: 0;
+    text-align: center;
+}
 h3, h4 {
     font-size: 14px;
 }
 h5, h6 {
     font-size: 12px;
-}
-
-label {
-    color: black;
 }
 
 .content p {
@@ -52,18 +52,18 @@ a img {
     border: none;
 }
 a:link, a:visited {
-    color:#414958;
+    color: #004075;
     text-decoration: underline;
 }
 a:hover, a:active, a:focus {
     text-decoration: none;
 }
 .container {
-    width: 50%;
+    width: 60%;
     max-width: 960px;
     min-width: 360px;
-    background-color: #FFF;
     margin: 0 auto;
+    background-color: #FFF;
 }
 .header {
     height: 120px;
@@ -120,6 +120,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 .content {
     padding: 10px 0;
+    min-height: 320px;
 }
 .content ul, .content ol {
     padding: 0 8px 8px 40px;
@@ -146,19 +147,21 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     font-size: 1px;
     line-height: 0px;
 }
+label {
+    color: #222;
+}
 .vangst {
-    margin: 40px auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0px 0px 24px;
     width: 320px;
+    margin: 0 auto;
+    font-size: 85%;
 }
 .vangst fieldset {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 8px 0px;
-    padding: 8px 0px 24px 4px;
+    margin: 4px 0px 12px;
+    padding: 10px 0px 24px 4px;
 }
 .vangst select {
-    font-size: 85%;
     height: 30px;
     margin-left: -4px;
     margin-right: 6px;
@@ -191,7 +194,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     width: 66px;
 }
 .vangst select.vangsthsv {
-    width: 290px;
+    width: 298px;
 }
 .vangst select.vangstsoort {
     width: 132px;
@@ -202,40 +205,69 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 .vangst select.vangstaantal {
     width: 70px;
 }
-
 .registration {
-    width: 400px;
+    width: 360px;
     margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 85%;
+    color: #222;
 }
-
+.registration select {
+    width: 212px;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: 1px solid #DDD;
+}
+.registration input {
+    width: 200px;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: 1px solid #DDD;
+}
 .login {
-    width: 400px;
+    width: 360px;
     margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 85%;
+    color: #222;
 }
-
+.login input {
+    width: 200px;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: 1px solid #DDD;
+}
 .catches {
-    width: 400px;
+    width: 360px;
     margin: 0 auto;
-    color: black;
+    padding-bottom: 20px;
+    font-size: 85%;
+    color: #222;
 }
-
+.catches th {
+    padding-bottom: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #004075;
+    text-align: left;
+}
 .users {
-    width: 100%;
-    margin: 10px;
-    color: black;
+    width: 96%;
+    margin: 24px auto 0;
+    padding-bottom: 20px;
+    font-size: 85%;
+    color: #222;
 }
-
 .users tr {
     text-align: left;
-
 }
-
 .users th {
-
-    padding: 5px 0 5px 0;
+    padding: 5px 0;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #004075;
 }
-
-
 button,
 .button,
 input[type="button"],
@@ -273,19 +305,18 @@ input[type="reset"]:active,
 input[type="submit"]:active {
     background-color: #55D737;
 }
-
-.error{
+.error {
     width: 400px;
     margin: 0 auto;
     margin-bottom: 30px;
-    color: black;
+    color: #222;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px 0px 24px 4px;
 }
-.error legend
-{
+.error legend {
     color: red;
 }
+
 
 .overview
 {
@@ -312,7 +343,7 @@ input[type="submit"]:active {
 #accordion
 {
     width: 90%;
-    margin-left: 10px;
+    margin: 0 auto;
 }
 
 .logged {
