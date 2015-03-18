@@ -35,7 +35,7 @@
         </ul>
     </div><!-- end .menu -->
     <div class="content">
-        <div class="logged">Ingelogt als: <?php echo $user['firstname'] .' '. $user['lastname'] ; ?></div>
+        <div class="logged">Ingelogd als: <?php echo $user['firstname'] .' '. $user['lastname'] ; ?></div>
         <div id='login_form'>
             <div class='vangst' id="vangst">
                 <h2>Vangst toevoegen</h2>
