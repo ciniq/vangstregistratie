@@ -85,7 +85,7 @@
 
 <script>
     $(function() {
-        $( "#accordion" ).accordion();
+        $( "#accordion" ).accordion({heightStyle: "content"});
     });
 
 </script>

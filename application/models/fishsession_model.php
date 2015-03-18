@@ -20,10 +20,10 @@ class Fishsession_model extends CI_Model{
 
     public function insertCatch()
     {
-        $userid = $this->session->all_userdata();
-        if ($userid)
+        $user = $this->session->all_userdata();
+        if ($user)
         {
-            $userid = $userid['userid'];
+            $userid = $user['userid'];
             $day = $this->security->xss_clean($this->input->post('day'));
             $month = $this->security->xss_clean($this->input->post('month'));
             $from = $this->security->xss_clean($this->input->post('from'));
@@ -33,7 +33,7 @@ class Fishsession_model extends CI_Model{
 
             if(0 == (int)$community)
             {
-                $community = $userid['refto_community_id'];
+                $community = $user['refto_community_id'];
             }
 
             $data = array(

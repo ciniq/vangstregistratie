@@ -29,6 +29,7 @@ class Overview_model extends CI_Model
             $this->db->join('size s', 'c.refto_size_id = s.id');
             $this->db->join('species sp', 'c.refto_species_id = sp.id');
             $this->db->where('fs.refto_user_id = '.$userid);
+            $this->db->order_by('fs.date','DESC');
 
             $data = $this->db->get()->result();
 

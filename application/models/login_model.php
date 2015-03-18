@@ -30,7 +30,8 @@ class Login_model extends CI_Model{
                     'lastname' => $row->lastname,
                     'username' => $row->username,
                     'validated' => true,
-                    'isadmin'  => $row->isadmin
+                    'isadmin'  => $row->isadmin,
+                    'refto_community_id' => $row->refto_community_id
                 );
 
                 $this->session->set_userdata($data);
