@@ -152,7 +152,7 @@ class register_model extends CI_Model{
 
     private function mailToAdmin($firstname, $lastname)
     {
-        $to      = 'pim.kusters@gmail.com, johan@bureaudolfijn.nl';
+        $to      = 'info@vr-geul.nl';
         $subject = 'Nieuwe registratie vr-geul.nl';
         $message =  'Beste, '."\r\n\r\n".
             "Er is een nieuwe registratie bij 'vangstregistratie geul'\r\n".
