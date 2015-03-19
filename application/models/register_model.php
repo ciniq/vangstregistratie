@@ -109,6 +109,8 @@ class register_model extends CI_Model{
                 'email' => $email
             );
 
+           $this->mailToUser($email, $firstname, $lastname);
+           $this->mailToAdmin($firstname, $lastname);
 
             $this->db->insert('user', $data);
 
@@ -116,8 +118,6 @@ class register_model extends CI_Model{
                 'msg' => "U bent geregistreerd, een administrator zal u spoedig toegang verlenen.");
         }
 
-
-//        todo: mailing toevoegen
 
         return  array(
             'save_success' => false,
@@ -133,5 +133,48 @@ class register_model extends CI_Model{
                 'email' => $email
             )
         );
+    }
+
+    private function mailToUser($email, $firstname, $lastname)
+    {
+        $to      = $email;
+        $subject = 'Registratie vr-geul.nl';
+        $message =  'Beste, '.$firstname.' '.$lastname."\r\n\r\n".
+            "Bedankt voor uw registratie bij 'vangstregistratie geul'\r\n".
+            'Uw account wordt spoedig geactiveerd door een administrator.'."\r\n\r\n".
+            'Met vriendelijke groet,'."\r\n\r\n".
+            'Het vr-geul team';
+
+        $headers = $this->getHeaders();
+
+        @mail($to, $subject, $message, $headers);
+    }
+
+    private function mailToAdmin($firstname, $lastname)
+    {
+        $to      = 'pim.kusters@gmail.com, johan@bureaudolfijn.nl';
+        $subject = 'Nieuwe registratie vr-geul.nl';
+        $message =  'Beste, '."\r\n\r\n".
+            "Er is een nieuwe registratie bij 'vangstregistratie geul'\r\n".
+            'Dit account graag even activeren.'."\r\n\r\n".
+            'Met vriendelijke groet,'."\r\n\r\n".
+            'Het vr-geul team';
+
+        $headers = $this->getHeaders();
+
+        @mail($to, $subject, $message, $headers);
+    }
+
+    private function getHeaders()
+    {
+        $headers = "From: no-reply <no-reply@vr-geul.nl>\r\n";
+        $headers .= "Reply-To: no-reply@vr-geul.nl\r\n";
+
+        $headers .= "Content-Type: text/plain\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+        $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
+
+        return $headers;
     }
 }
