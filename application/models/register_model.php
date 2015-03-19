@@ -52,6 +52,11 @@ class register_model extends CI_Model{
             $msg .= " - Dit vispasnummer is reeds in gebruik!</br>";
         }
 
+        if ('' !== $vispasnr && !is_numeric($vispasnr))
+        {
+            $msg .= " - Het vispasnummer mag alleen uit cijfers bestaan!";
+        }
+
         if ('' == $username)
         {
             $msg .= " - Gebruikersnaam niet ingevuld!</br>";
