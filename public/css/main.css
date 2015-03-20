@@ -12,6 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 html, body {
+	height: 101%;
     font: 16px/1.0 Lato, sans-serif;
     background-color: #E4E4E4;
     color: #FFF;
@@ -22,26 +23,29 @@ ul, ol, dl {
 }
 h1, h2, h3, h4, h5, h6 {
     clear: both;
-    margin: 24px 0 12px;
+    margin: 28px 0 12px;
     padding-left: 20px;
     text-transform: uppercase;
+    font-size: 18px;
     font-weight: 700;
     color: #004075;
-}
-h1, h2 {
-    font-size: 18px;
 }
 h2 {
     padding-left: 0;
     text-align: center;
 }
 h3, h4 {
-    font-size: 14px;
+	margin: 20px 0 8px;
+	padding-left: 0px;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: 700;
 }
 h5, h6 {
-    font-size: 12px;
+	text-transform: none;
+	font-size: 14px;
+	font-weight: 400;
 }
-
 .content p {
     margin-top: 0;
     padding: 0px 20px 12px 20px;
@@ -59,11 +63,15 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 .container {
-    width: 60%;
-    max-width: 960px;
+    width: 100%;
+	min-height: 100%;
+    max-width: 720px;
     min-width: 360px;
     margin: 0 auto;
     background-color: #FFF;
+}
+.wide {
+    max-width: 960px;
 }
 .header {
     height: 120px;
@@ -105,14 +113,15 @@ ul.nav li {
     float: right;
 }
 ul.nav a, ul.nav a:visited {
-    height: 16px;
-    padding: 15px;
-    display: block;
-    font-size: 14px;
-    color: #FFF;
-    text-transform: uppercase;
-    text-decoration: none;
-    background-color: #24890D;
+	height: 16px;
+	padding: 15px 10px;
+	display: block;
+	font-size: 12px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #24890D;
+	font-weight: 700;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
     background-color: #41A62A;
@@ -120,17 +129,15 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 .content {
     padding: 10px 0;
-    min-height: 320px;
 }
 .content ul, .content ol {
     padding: 0 8px 8px 40px;
 }
 .footer {
-    height: 16px;
-    padding: 16px 20px 14px 20px;
-    background-color: #004075;
-    font-size: 12px;
-    color: #99B3C8;
+    padding: 32px 20px 16px;
+	background-color: #FFF;
+    font-size: 10px;
+    color: #999;
     text-align: center;
 }
 .fltrt {
@@ -149,40 +156,30 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 label {
     color: #222;
+	padding-left: 4px;
 }
 .vangst {
-    padding: 0px 0px 24px;
-    width: 320px;
+    width: 328px;
     margin: 0 auto;
-    font-size: 85%;
+    padding-bottom: 24px;
+    font-size: 14px;
 }
 .vangst fieldset {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #DDD;
     margin: 4px 0px 12px;
-    padding: 10px 0px 24px 4px;
+    padding: 10px 0px 24px 8px;
+}
+.vangst legend {
+	font-size: 16px;
+    font-weight: 700;
+    color: #004075;
 }
 .vangst select {
     height: 30px;
-    margin-left: -4px;
-    margin-right: 6px;
+    margin-right: 2px;
     margin-top: 6px;
     border: 1px solid #DDD;
-    border-left: none;
-    border-right: none;
-}
-.vangst button.vangstextra {
-    width: 22px;
-    margin-left: -4px;
-    padding: 4px 4px 4px 4px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    float: right;
-}
-.vangst legend {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #004075;
+    font: 14px Lato, sans-serif;
 }
 .vangst select.vangstdag {
     width: 66px;
@@ -195,9 +192,10 @@ label {
 }
 .vangst select.vangsthsv {
     width: 298px;
+	margin-top: 8px;
 }
 .vangst select.vangstsoort {
-    width: 132px;
+    width: 136px;
 }
 .vangst select.vangstformaat {
     width: 84px;
@@ -205,18 +203,32 @@ label {
 .vangst select.vangstaantal {
     width: 70px;
 }
+#vangsttabel {
+	margin-left: -2px;
+}
+.vangst button.vangstextra {
+    width: 22px;
+    margin-left: 0px;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    float: right;
+}
 .registration {
     width: 360px;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-size: 85%;
+    font-size: 14px;
     color: #222;
 }
 .registration select {
-    width: 212px;
+    width: 214px;
+    height: 30px;
     margin-bottom: 8px;
     padding: 6px;
     border: 1px solid #DDD;
+    font: 14px Lato, sans-serif;
 }
 .registration input {
     width: 200px;
@@ -228,7 +240,7 @@ label {
     width: 360px;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-size: 85%;
+    font-size: 14px;
     color: #222;
 }
 .login input {
@@ -237,36 +249,62 @@ label {
     padding: 6px;
     border: 1px solid #DDD;
 }
-.catches {
-    width: 360px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    font-size: 85%;
-    color: #222;
-}
-.catches th {
-    padding-bottom: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #004075;
-    text-align: left;
+#login_form a {
+	padding-left: 4px;
 }
 .users {
     width: 96%;
     margin: 24px auto 0;
     padding-bottom: 20px;
-    font-size: 85%;
+    font-size: 14px;
     color: #222;
+}
+.users th {
+    padding: 5px 0;
+    font-weight: 700;
+    color: #004075;
+	text-align: left;
 }
 .users tr {
     text-align: left;
 }
-.users th {
-    padding: 5px 0;
+.overview {
+    width: 64%;
+	margin: 0 auto; 
+    color: #222;
+	font-size: 14px;
     text-align: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #004075;
+}
+.overview th {
+    height: 16px;
+	width: 25%;
+	font-weight: 700;
+	color: #004075;
+	text-align: left;
+}
+.overview th:first-child {
+	width: 50%;
+}
+.overviewdatum {
+	background: #DDD;
+	cursor: pointer;
+	padding: 5px 0;
+	text-align: center;
+}
+.overviewdatum:hover {
+    background: #E5E5E5;
+}
+#accordion {
+    width: 98%;
+    margin: -20px auto 0;
+    padding-bottom: 20px;
+}
+.logged {
+    float: right;
+	height: 10px;
+	margin-right: 20px;
+    font-size: 10px;
+    color: #999;
 }
 button,
 .button,
@@ -275,7 +313,7 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: none;
     padding: 10px 20px 11px;
-    background-color: #24890d;
+    background-color: #24890D;
     border: 0;
     border-radius: 2px;
     font-size: 12px;
@@ -306,49 +344,15 @@ input[type="submit"]:active {
     background-color: #55D737;
 }
 .error {
-    width: 400px;
+    width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
-    color: #222;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid #DDD;
     padding: 8px 0px 24px 4px;
+	font-size: 14px;
+    color: #222;
 }
 .error legend {
+	font-weight: 700;
     color: red;
-}
-
-
-.overview
-{
-    width: 100%;
-    padding: 10px;
-    color: black;
-}
-
-.overview th
-{
-    text-align: left;
-    border-bottom: #000 1px solid;
-    height: 20px;
-    width: 33%;
-}
-
-.overviewdatum
-{
-    background: grey;
-    cursor: pointer;
-    padding: 5px 0 5px 10px;
-}
-
-#accordion
-{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logged {
-    float: right;
-    font-size: 12px;
-    color: #000;
-    margin-right: 10px;
 }

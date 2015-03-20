@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container wide">
     <div class="header"><a href="http://www.vbc-geul.nl"><img src="<?php echo base_url(); ?>img/VBC-logo.png" alt="VBC Geul &amp; Zijbeken" class="logo"></a>
         <ul class="title">
             <li>vangstregistratie</li>
