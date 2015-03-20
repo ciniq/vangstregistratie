@@ -109,7 +109,7 @@ class register_model extends CI_Model{
                 'email' => $email
             );
 
-           $this->mailToUser($email, $firstname, $lastname);
+           $this->mailToUser($email, $firstname, $lastname, $username, $password);
            $this->mailToAdmin($firstname, $lastname);
 
             $this->db->insert('user', $data);
@@ -135,13 +135,15 @@ class register_model extends CI_Model{
         );
     }
 
-    private function mailToUser($email, $firstname, $lastname)
+    private function mailToUser($email, $firstname, $lastname, $username, $password)
     {
         $to      = $email;
         $subject = 'Registratie vr-geul.nl';
         $message =  'Beste, '.$firstname.' '.$lastname."\r\n\r\n".
             "Bedankt voor uw registratie bij 'vangstregistratie geul'\r\n".
             'Uw account wordt spoedig geactiveerd door een administrator.'."\r\n\r\n".
+            'Gebruikersnaam: '.$username."\r\n".
+            'Wachtwoord: '.$password."\r\n\r\n".
             'Met vriendelijke groet,'."\r\n\r\n".
             'Het vr-geul team';
 
