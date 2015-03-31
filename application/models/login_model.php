@@ -42,4 +42,15 @@ class Login_model extends CI_Model{
         // then return false.
         return false;
     }
+
+    public function getCommunity($id)
+    {
+        $this->db->select('displayname as community');
+        $this->db->from('community');
+        $this->db->where('id = '. $id);
+
+        $data = $this->db->get()->result();
+
+        return $data[0]->community;
+    }
 }

@@ -11,9 +11,12 @@ class Fishsession extends CI_Controller{
 
 
         $this->load->model('fishsession_model');
+        $this->load->model('login_model');
         // Validate the user can login
         $result = $this->fishsession_model->getLayoutData();
+
         $result['user'] = $this->session->all_userdata();
+        $result['user']['community'] = $this->login_model->getCommunity($result['user']['refto_community_id']);
         // Load our view to be displayed
         // to the user
         $this->load->view('fishsession', $result);

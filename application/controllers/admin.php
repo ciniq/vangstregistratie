@@ -11,9 +11,13 @@ class Admin extends CI_Controller{
 
 
         $this->load->model('admin_model');
-        // Validate the user can login
+        $this->load->model('login_model');
+
+        // Get the data
         $result = $this->admin_model->getLayoutData();
         $result['user'] = $this->session->all_userdata();
+        $result['user']['community'] = $this->login_model->getCommunity($result['user']['refto_community_id']);
+
         // Load our view to be displayed
         // to the user
         $this->load->view('admin', $result);
@@ -32,9 +36,6 @@ class Admin extends CI_Controller{
             }
         }
     }
-
-
-
 
     private function check_isvalidated(){
         if(! $this->session->userdata('validated')){
