@@ -49,7 +49,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
+$db['default']['username'] = 'pim';
 $db['default']['password'] = 'C1n1qu3!';
 $db['default']['database'] = 'vangstenregistratie';
 $db['default']['dbdriver'] = 'mysql';
