@@ -62,7 +62,7 @@
 
                     foreach($catch as $c)
                     {
-                        echo '<tr><td>'.$c['species'].'</td><td>'.$c['size'].'</td><td>'.$c['amount'].'</td></tr>';
+                        echo '<tr><td>'.$c['species'].'</td><td>'.$c['size'].'</td><td>'.( 0 != $c['amount'] ? $c['amount'] : '---' ) .'</td></tr>';
                     }
 
                     echo '</table>';

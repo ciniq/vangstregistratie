@@ -74,6 +74,17 @@ class Fishsession_model extends CI_Model{
                              $retval['msg'] = 'Er is een fout opgetreden, controlleer de vangsgegevens';
                         }
                     }
+                    else
+                    {
+                        $data = array(
+                                'refto_fishsession_id' => $fishsessionid,
+                                'refto_size_id' => 22,
+                                'refto_species_id' => 32,
+                                'amount' => 0
+                            );
+
+                            $this->db->insert('catch', $data);
+                    }
                 }
             }
             else

@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b5493-81b1-4fb0-ade5-77d0a46b22d3" name="Default" comment="minlength op vispasnr gezet">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin.php" afterPath="$PROJECT_DIR$/application/views/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/fishsession.php" afterPath="$PROJECT_DIR$/application/controllers/fishsession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/fishsession.php" afterPath="$PROJECT_DIR$/application/views/fishsession.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/login_model.php" afterPath="$PROJECT_DIR$/application/models/login_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/overview.php" afterPath="$PROJECT_DIR$/application/controllers/overview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/fishsession_model.php" afterPath="$PROJECT_DIR$/application/models/fishsession_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/overview.php" afterPath="$PROJECT_DIR$/application/views/overview.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -38,7 +33,7 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.703704" vertical-offset="35" max-vertical-offset="990">
+            <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="990">
               <caret line="18" column="111" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="111" />
               <folding />
             </state>
@@ -48,19 +43,32 @@
       <file leaf-file-name="fishsession.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="774">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="774">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fishsession_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-29.037037" vertical-offset="818" max-vertical-offset="2286">
+              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="overview.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/overview.php">
+        <entry file="file://$PROJECT_DIR$/application/views/overview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53406596" vertical-offset="0" max-vertical-offset="910">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding />
+            <state vertical-scroll-proportion="0.7714286" vertical-offset="504" max-vertical-offset="1764">
+              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+              <folding>
+                <marker date="1427957251154" expanded="true" signature="2458:2668" placeholder="..." />
+                <marker date="1427957251154" expanded="true" signature="2491:2668" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +94,6 @@
       <list>
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
-        <option value="$PROJECT_DIR$/application/models/fishsession_model.php" />
         <option value="$PROJECT_DIR$/databaseSql/vangstenregistratie.sql" />
         <option value="$PROJECT_DIR$/application/models/overview_model.php" />
         <option value="$PROJECT_DIR$/application/views/register.php" />
@@ -95,9 +102,10 @@
         <option value="$PROJECT_DIR$/application/models/login_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/application/views/fishsession.php" />
-        <option value="$PROJECT_DIR$/application/views/overview.php" />
         <option value="$PROJECT_DIR$/application/controllers/fishsession.php" />
         <option value="$PROJECT_DIR$/application/controllers/overview.php" />
+        <option value="$PROJECT_DIR$/application/models/fishsession_model.php" />
+        <option value="$PROJECT_DIR$/application/views/overview.php" />
       </list>
     </option>
   </component>
@@ -322,6 +330,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -329,9 +340,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -563,7 +571,25 @@
       <option name="project" value="LOCAL" />
       <updated>1426840353177</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="logged info aangepast">
+      <created>1427804025689</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1427804025689</updated>
+    </task>
+    <task id="LOCAL-00038" summary="css aangepast">
+      <created>1427809095114</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1427809095114</updated>
+    </task>
+    <task id="LOCAL-00039" summary="0 vangsten toegestaan">
+      <created>1427956140062</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1427956140062</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -609,9 +635,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Layout overgenomen van voorbeeld &#10;Tutorial map verwijderd" />
-    <MESSAGE value="vangstregistratie basis toegevoegd" />
-    <MESSAGE value="overview basis staat." />
     <MESSAGE value="mysql export ingevoegd" />
     <MESSAGE value="removed empty line" />
     <MESSAGE value="database terug naar lokaal gezet" />
@@ -634,7 +657,10 @@
     <MESSAGE value="minlength op vispasnr gezet" />
     <MESSAGE value="credentials in activeringsmail" />
     <MESSAGE value="wijzigingen Johan" />
-    <option name="LAST_COMMIT_MESSAGE" value="wijzigingen Johan" />
+    <MESSAGE value="logged info aangepast" />
+    <MESSAGE value="css aangepast" />
+    <MESSAGE value="0 vangsten toegestaan" />
+    <option name="LAST_COMMIT_MESSAGE" value="0 vangsten toegestaan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -659,9 +685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1998">
           <caret line="37" column="36" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <marker date="1427803523614" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1890">
           <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,8 +701,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2458:2668" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2491:2668" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -709,9 +732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1998">
           <caret line="37" column="36" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <marker date="1427803523614" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1890">
           <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,8 +748,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1764">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2458:2668" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2491:2668" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -759,9 +779,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1998">
           <caret line="37" column="36" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="36" />
-          <folding>
-            <marker date="1427803523614" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -826,8 +844,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1764">
           <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2458:2668" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2491:2668" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -937,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33626375" vertical-offset="396" max-vertical-offset="2178">
-          <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/overview_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6934066" vertical-offset="179" max-vertical-offset="1116">
@@ -955,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1978022" vertical-offset="0" max-vertical-offset="3366">
           <caret line="10" column="61" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,26 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.037037" vertical-offset="152" max-vertical-offset="1098">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/overview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5934066" vertical-offset="234" max-vertical-offset="1764">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1427803897082" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64395607" vertical-offset="80" max-vertical-offset="3708">
-          <caret line="37" column="124" selection-start-line="37" selection-start-column="124" selection-end-line="37" selection-end-column="124" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45494506" vertical-offset="0" max-vertical-offset="910">
           <caret line="23" column="50" selection-start-line="9" selection-start-column="7" selection-end-line="23" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73913044" vertical-offset="993" max-vertical-offset="1890">
           <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,24 +994,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0989011" vertical-offset="576" max-vertical-offset="1998">
           <caret line="37" column="124" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="124" />
-          <folding>
-            <marker date="1427803523614" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.703704" vertical-offset="35" max-vertical-offset="990">
+        <state vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="990">
           <caret line="18" column="111" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="774">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1032,7 +1010,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53406596" vertical-offset="0" max-vertical-offset="910">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/fishsession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9076923" vertical-offset="2402" max-vertical-offset="3708">
+          <caret line="37" column="124" selection-start-line="37" selection-start-column="124" selection-end-line="37" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/fishsession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="774">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/fishsession_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.037037" vertical-offset="818" max-vertical-offset="2286">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/overview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7714286" vertical-offset="504" max-vertical-offset="1764">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <folding>
+            <marker date="1427957251154" expanded="true" signature="2458:2668" placeholder="..." />
+            <marker date="1427957251154" expanded="true" signature="2491:2668" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
