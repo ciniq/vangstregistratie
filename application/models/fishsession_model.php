@@ -69,15 +69,10 @@ class Fishsession_model extends CI_Model{
 
                             $this->db->insert('catch', $data);
                         }
-                        else
+                        else if ($catch['species'] !== 'geen' || $catch['size'] !== '0' || $catch['amount'] !== '0')
                         {
                              $retval['msg'] = 'Er is een fout opgetreden, controlleer de vangsgegevens';
                         }
-                    }
-                    else
-                    {
-                        $retval['status'] = false;
-                        $retval['msg'] = 'Er is een fout opgetreden, controlleer de vangsgegevens';
                     }
                 }
             }
